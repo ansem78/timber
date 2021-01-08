@@ -1,0 +1,37 @@
+{
+  "name": "timber",
+  "version": "1.0.0",
+  "description": "SCSS helper functions.",
+  "scripts": {
+		"setup": "yarn install || exit 0",
+    "test": "sass --style expanded --no-source-map --no-error-css --stop-on-error test/"
+  },
+	"author": "Alexandro Morato",
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "helpers",
+    "front-end",
+    "web"
+  ],
+	"sass": "scss/timber.scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansem78/timber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ansem78/timber/issues"
+  },
+	"homepage": "https://github.com/ansem78/timber#readme",
+	"license": "MIT",
+	"engines": {
+    "node": ">=10.0"
+  },
+	"files": [
+    "scss/*.scss"
+  ],
+	"devDependencies": {
+		"sass": "^1.29.0"
+	}
+}

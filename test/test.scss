@@ -1,0 +1,5 @@
+@use '../scss/timber';
+
+// Case.
+$lowerCase: timber.lowerCase('UPPERCASE STRING');
+$upperCase: timber.upperCase('lowercase string');

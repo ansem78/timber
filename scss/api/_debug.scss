@@ -1,0 +1,14 @@
+@function debug($value) {
+	@debug $value;
+	@return $value;
+}
+
+@function warn($message) {
+	@warn $message;
+	@return null;
+}
+
+@function error($message) {
+	@error $message;
+	@return null;
+}
