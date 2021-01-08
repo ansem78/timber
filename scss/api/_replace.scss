@@ -1,0 +1,9 @@
+@use 'sass:string';
+
+@function replace($str, $search, $replace) {
+  $i: string.index($str, $search);
+  @if $i {
+    @return #{string.slice($str, 1, $i - 1)}#{$replace}#{replace(string.slice($str, $i + string.length($search)), $search, $replace)};
+  }
+  @return $str;
+}
